@@ -1,4 +1,5 @@
 import MarkdownPreviewer from "./components/markdown-preview";
+import '../styles/stylesheet.scss'
 
 function App() {
   return (
