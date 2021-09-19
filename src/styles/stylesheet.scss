@@ -1,0 +1,18 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.markdown-container {
+    position: relative;
+    max-width: 50vw;
+    max-height: 100vh;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 15em;
+
+    textarea {
+        width: 100%;
+    }
+}
