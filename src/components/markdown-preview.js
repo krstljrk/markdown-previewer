@@ -13,14 +13,15 @@ export default function MarkdownPreviewer() {
         <div className="markdown-container container-fluid">
             <div className="row">
                 <div className="col-5 container rounded">
-                    <h4 className="text-center">Enter your Markdown:</h4>
-                    <textarea className="form-control" id="editor" value={input} onChange={handleChange} />
+                    <h4 className="text-center container-title">Enter your Markdown:</h4>
+                    <textarea className="form-control tech-text" id="editor" value={input} onChange={handleChange} />
                 </div>
                 <div className="col-5 container rounded">
-                    <h4 className="text-center">Preview text:</h4>
-                    <div id="preview">
+                    <h4 className="text-center container-title">Preview text:</h4>
+                    <div className="tech-text" id="preview">
                         {input}
                     </div>
+
                 </div>
             </div>
 

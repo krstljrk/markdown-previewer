@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
 @mixin equal-padding ($x) {
     padding: $x $x $x $x;
@@ -8,6 +9,7 @@
 $background: #00b894;
 $container: #55efc4;
 $font: 'Bebas Neue', cursive;
+$font-area: 'Roboto Mono', monospace;
 
 body {
     background-color: $background;
@@ -38,4 +40,19 @@ body {
     border: 1px solid black;
     background: $container;
     @include equal-padding(50px);
+}
+
+.tech-text {
+    font-family: $font-area;
+}
+
+.container-title {
+    padding: 0 0 20px 0;
+}
+
+#preview {
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+    @include equal-padding(30px);
 }
