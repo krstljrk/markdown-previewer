@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";ˇ
+import { createSlice } from '@reduxjs/toolkit';
 
 export const markdownSlice = createSlice({
     name: "markdown",
     initialState : {
-        markdownInput: ''
+        markdownInput: 'This is a placeholder preview text'
     },
     reducers: {
         updatePreview: (state, action) => {

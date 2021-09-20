@@ -1,5 +1,5 @@
-import React from 'react'
-import '../styles/stylesheet.scss'
+import React from 'react';
+import '../styles/stylesheet.scss';
 import { useSelector } from 'react-redux';
 
 export default function MarkdownPreviewer() {
