@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/stylesheet.scss';
 import { useSelector } from 'react-redux';
+import marked from 'marked';
 
 export default function MarkdownPreviewer() {
     const [input, setInput] = useState('');
@@ -8,6 +9,8 @@ export default function MarkdownPreviewer() {
     const handleChange = (event) => {
         setInput(event.target.value)
     }
+
+    const marked = marked(input);
 
     return (
         <div className="markdown-container container-fluid">
