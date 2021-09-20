@@ -1,13 +1,15 @@
 import React from 'react'
 import '../styles/stylesheet.scss'
+import { useSelector } from 'react-redux';
 
 export default function MarkdownPreviewer() {
+    const state = useSelector(state => state.markdown)
 
     return (
         <div className="markdown-container">
             <textarea id="editor" />
             <div id="preview">
-                This is the Preview area
+                {state.markdownInput}
             </div>
         </div>
     )
