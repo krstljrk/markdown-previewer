@@ -44,7 +44,7 @@ body {
 
 .markdown-container {
     position: relative;
-    max-width: 60vw;
+    max-width: 55vw;
     max-height: auto;
     background-color: white;
     background: $background;
@@ -64,12 +64,12 @@ body {
 }
 
 .container-textfield {
-    width: 40vw;
+    width: 45vw;
 
     textarea {
         resize: vertical; 
-        max-height: 1000px; 
-        min-height: 300px;
+        max-height: auto; 
+        min-height: 350px;
     }
 
 }

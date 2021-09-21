@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../styles/stylesheet.scss';
-import { useSelector } from 'react-redux';
 import  marked from 'marked';
 
 marked.setOptions({
@@ -30,7 +29,7 @@ export default function MarkdownPreviewer() {
         <div className="markdown-container container-fluid">
             <div className="row container container-textfield rounded">
                 <h4 className="text-center container-title">Enter your Markdown:</h4>
-                <textarea className="form-control tech-text" id="editor" value={input} onChange={handleChange} />
+                <textarea className="form-control tech-text" id="editor" value={input} onChange={handleChange}  placeholder="Write here..." />
             </div>
             <div className="row container container-preview rounded">
                 <h4 className="text-center container-title">Preview text:</h4>
