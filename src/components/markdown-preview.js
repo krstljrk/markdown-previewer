@@ -28,11 +28,11 @@ export default function MarkdownPreviewer() {
 
     return (
         <div className="markdown-container container-fluid">
-            <div className="row container-textfield rounded">
+            <div className="row container container-textfield rounded">
                 <h4 className="text-center container-title">Enter your Markdown:</h4>
                 <textarea className="form-control tech-text" id="editor" value={input} onChange={handleChange} />
             </div>
-            <div className="row container-preview rounded">
+            <div className="row container container-preview rounded">
                 <h4 className="text-center container-title">Preview text:</h4>
                 <div className="tech-text" id="preview" dangerouslySetInnerHTML={getMarkdownText()}>
                 </div>
